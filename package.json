@@ -21,7 +21,7 @@
     "start": "electron-vite preview",
     "cli": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON cli.ts",
     "preview:ui": "electron-vite build && node scripts/preview-server.cjs out/renderer",
-    "dist": "electron-vite build && electron-builder --win",
+    "dist": "electron-vite build && electron-builder --win --publish never",
     "typecheck": "tsc --noEmit"
   },
   "build": {

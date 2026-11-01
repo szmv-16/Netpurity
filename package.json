@@ -1,0 +1,85 @@
+{
+  "name": "netpurity",
+  "productName": "NetPurity",
+  "version": "0.1.0",
+  "description": "网络纯净度 / DNS 泄露 / WebRTC 泄露检测工具",
+  "main": "./out/main/index.js",
+  "author": "NetPurity Contributors",
+  "license": "AGPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szmv-16/netpurity.git"
+  },
+  "bugs": {
+    "url": "https://github.com/szmv-16/netpurity/issues"
+  },
+  "homepage": "https://github.com/szmv-16/netpurity#readme",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "cli": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON cli.ts",
+    "preview:ui": "electron-vite build && node scripts/preview-server.cjs out/renderer",
+    "dist": "electron-vite build && electron-builder --win",
+    "typecheck": "tsc --noEmit"
+  },
+  "build": {
+    "appId": "io.github.netpurity",
+    "productName": "NetPurity",
+    "copyright": "Copyright © 2026 NetPurity Contributors",
+    "asar": true,
+    "compression": "maximum",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "out/**/*",
+      "!out/**/*.map",
+      "package.json"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "portable": {
+      "artifactName": "NetPurity-${version}-portable.exe",
+      "requestExecutionLevel": "user"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "NetPurity",
+      "artifactName": "NetPurity-${version}-setup.exe",
+      "deleteAppDataOnUninstall": false
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.0",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^2.3.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.7.0",
+    "vite": "^5.4.11"
+  }
+}

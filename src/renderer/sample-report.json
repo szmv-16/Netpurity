@@ -1,0 +1,607 @@
+{
+  "startedAt": "2026-11-01T00:29:10.709Z",
+  "finishedAt": "2026-11-01T00:29:14.606Z",
+  "durationMs": 3897,
+  "exit": {
+    "ipv4": "203.0.113.42",
+    "sources": [
+      {
+        "name": "ipify",
+        "ip": "203.0.113.42",
+        "ms": 1348
+      },
+      {
+        "name": "ipwho.is",
+        "ip": "203.0.113.42",
+        "ms": 106
+      },
+      {
+        "name": "icanhazip",
+        "ip": "203.0.113.42",
+        "ms": 104
+      },
+      {
+        "name": "ifconfig.me",
+        "ip": "203.0.113.42",
+        "ms": 284
+      },
+      {
+        "name": "ipinfo",
+        "ip": "203.0.113.42",
+        "ms": 286
+      },
+      {
+        "name": "ipv6.icanhazip",
+        "ms": 49,
+        "error": "fetch failed"
+      },
+      {
+        "name": "v6.ident.me",
+        "ms": 48,
+        "error": "fetch failed"
+      }
+    ],
+    "consistent": true
+  },
+  "intel": {
+    "ip": "203.0.113.42",
+    "country": "Hong Kong",
+    "countryCode": "HK",
+    "region": "Hong Kong",
+    "city": "Hong Kong",
+    "timezone": "Asia/Hong_Kong",
+    "isp": "Example Telecom IMS Limited",
+    "org": "Example Telecom Global HK Limited",
+    "asn": "AS4760",
+    "asName": "EXAMPLE-AP",
+    "isMobile": false,
+    "isProxy": false,
+    "isHosting": false,
+    "ptr": "42-113-0-203.static.example.net",
+    "ipClass": "residential",
+    "classReason": "网络名称符合住宅宽带特征：EXAMPLE-AP | Example Telecom Global HK Limited | Example Telecom IMS Limited",
+    "sources": {
+      "ipwho.is": {
+        "ip": "203.0.113.42",
+        "success": true,
+        "type": "IPv4",
+        "continent": "Asia",
+        "continent_code": "AS",
+        "country": "Hong Kong",
+        "country_code": "HK",
+        "region": "Hong Kong",
+        "region_code": "HK",
+        "city": "Hong Kong",
+        "latitude": 22.2783168,
+        "longitude": 114.1746891,
+        "is_eu": false,
+        "postal": "999077",
+        "calling_code": "852",
+        "capital": "Hong Kong",
+        "borders": "CN",
+        "flag": {
+          "img": "https://cdn.ipwhois.io/flags/hk.svg",
+          "emoji": "🇭🇰",
+          "emoji_unicode": "U+1F1ED U+1F1F0"
+        },
+        "connection": {
+          "asn": 4760,
+          "org": "Example Telecom Global HK Limited",
+          "isp": "Example Telecom IMS Limited",
+          "domain": "example-telecom.net"
+        },
+        "timezone": {
+          "id": "Asia/Hong_Kong",
+          "abbr": "HKT",
+          "is_dst": false,
+          "offset": 28800,
+          "utc": "+08:00"
+        },
+        "readme": "https://ipwhois.io/docs"
+      },
+      "ip-api.com": {
+        "status": "success",
+        "country": "Hong Kong",
+        "countryCode": "HK",
+        "regionName": "Central and Western District",
+        "city": "Hong Kong",
+        "timezone": "Asia/Hong_Kong",
+        "isp": "Netvigator",
+        "org": "HKT",
+        "as": "AS4760 HKT Limited",
+        "asname": "EXAMPLE-AP",
+        "mobile": false,
+        "proxy": false,
+        "hosting": false
+      }
+    }
+  },
+  "checks": [
+    {
+      "id": "exit",
+      "title": "出口 IP",
+      "subtitle": "多源交叉验证当前真实出口",
+      "status": "ok",
+      "score": 0,
+      "maxScore": 0,
+      "summary": "5 个探测源一致指向 203.0.113.42",
+      "findings": [
+        {
+          "label": "IPv4 出口",
+          "value": "203.0.113.42",
+          "status": "ok"
+        },
+        {
+          "label": "IPv6 出口",
+          "value": "未检测到（可能是好事，也可能只是没有 v6）",
+          "status": "skip"
+        },
+        {
+          "label": "ipify",
+          "value": "203.0.113.42（1348ms）",
+          "status": "ok"
+        },
+        {
+          "label": "ipwho.is",
+          "value": "203.0.113.42（106ms）",
+          "status": "ok"
+        },
+        {
+          "label": "icanhazip",
+          "value": "203.0.113.42（104ms）",
+          "status": "ok"
+        },
+        {
+          "label": "ifconfig.me",
+          "value": "203.0.113.42（284ms）",
+          "status": "ok"
+        },
+        {
+          "label": "ipinfo",
+          "value": "203.0.113.42（286ms）",
+          "status": "ok"
+        },
+        {
+          "label": "ipv6.icanhazip",
+          "value": "失败：fetch failed",
+          "status": "skip"
+        },
+        {
+          "label": "v6.ident.me",
+          "value": "失败：fetch failed",
+          "status": "skip"
+        }
+      ],
+      "raw": {
+        "ipv4": "203.0.113.42",
+        "sources": [
+          {
+            "name": "ipify",
+            "ip": "203.0.113.42",
+            "ms": 1348
+          },
+          {
+            "name": "ipwho.is",
+            "ip": "203.0.113.42",
+            "ms": 106
+          },
+          {
+            "name": "icanhazip",
+            "ip": "203.0.113.42",
+            "ms": 104
+          },
+          {
+            "name": "ifconfig.me",
+            "ip": "203.0.113.42",
+            "ms": 284
+          },
+          {
+            "name": "ipinfo",
+            "ip": "203.0.113.42",
+            "ms": 286
+          },
+          {
+            "name": "ipv6.icanhazip",
+            "ms": 49,
+            "error": "fetch failed"
+          },
+          {
+            "name": "v6.ident.me",
+            "ms": 48,
+            "error": "fetch failed"
+          }
+        ],
+        "consistent": true
+      },
+      "durationMs": 1349
+    },
+    {
+      "id": "ip-purity",
+      "title": "IP 纯净度",
+      "subtitle": "类型、原生性、网络归属",
+      "status": "ok",
+      "score": 35,
+      "maxScore": 35,
+      "summary": "出口是住宅宽带，类型层面可信",
+      "findings": [
+        {
+          "label": "IP 类型",
+          "value": "住宅宽带",
+          "status": "ok",
+          "hint": "网络名称符合住宅宽带特征：EXAMPLE-AP | Example Telecom Global HK Limited | Example Telecom IMS Limited"
+        },
+        {
+          "label": "归属地",
+          "value": "Hong Kong · Hong Kong · Hong Kong",
+          "status": "ok"
+        },
+        {
+          "label": "网络",
+          "value": "AS4760 · EXAMPLE-AP",
+          "status": "ok"
+        },
+        {
+          "label": "反向解析 PTR",
+          "value": "42-113-0-203.static.example.net",
+          "status": "ok"
+        },
+        {
+          "label": "多源一致性",
+          "value": "5 个探测源结果一致",
+          "status": "ok"
+        }
+      ],
+      "raw": {
+        "exit": {
+          "ipv4": "203.0.113.42",
+          "sources": [
+            {
+              "name": "ipify",
+              "ip": "203.0.113.42",
+              "ms": 1348
+            },
+            {
+              "name": "ipwho.is",
+              "ip": "203.0.113.42",
+              "ms": 106
+            },
+            {
+              "name": "icanhazip",
+              "ip": "203.0.113.42",
+              "ms": 104
+            },
+            {
+              "name": "ifconfig.me",
+              "ip": "203.0.113.42",
+              "ms": 284
+            },
+            {
+              "name": "ipinfo",
+              "ip": "203.0.113.42",
+              "ms": 286
+            },
+            {
+              "name": "ipv6.icanhazip",
+              "ms": 49,
+              "error": "fetch failed"
+            },
+            {
+              "name": "v6.ident.me",
+              "ms": 48,
+              "error": "fetch failed"
+            }
+          ],
+          "consistent": true
+        },
+        "intel": {
+          "ip": "203.0.113.42",
+          "country": "Hong Kong",
+          "countryCode": "HK",
+          "region": "Hong Kong",
+          "city": "Hong Kong",
+          "timezone": "Asia/Hong_Kong",
+          "isp": "Example Telecom IMS Limited",
+          "org": "Example Telecom Global HK Limited",
+          "asn": "AS4760",
+          "asName": "EXAMPLE-AP",
+          "isMobile": false,
+          "isProxy": false,
+          "isHosting": false,
+          "ptr": "42-113-0-203.static.example.net",
+          "ipClass": "residential",
+          "classReason": "网络名称符合住宅宽带特征：EXAMPLE-AP | Example Telecom Global HK Limited | Example Telecom IMS Limited",
+          "sources": {
+            "ipwho.is": {
+              "ip": "203.0.113.42",
+              "success": true,
+              "type": "IPv4",
+              "continent": "Asia",
+              "continent_code": "AS",
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "region": "Hong Kong",
+              "region_code": "HK",
+              "city": "Hong Kong",
+              "latitude": 22.2783168,
+              "longitude": 114.1746891,
+              "is_eu": false,
+              "postal": "999077",
+              "calling_code": "852",
+              "capital": "Hong Kong",
+              "borders": "CN",
+              "flag": {
+                "img": "https://cdn.ipwhois.io/flags/hk.svg",
+                "emoji": "🇭🇰",
+                "emoji_unicode": "U+1F1ED U+1F1F0"
+              },
+              "connection": {
+                "asn": 4760,
+                "org": "Example Telecom Global HK Limited",
+                "isp": "Example Telecom IMS Limited",
+                "domain": "example-telecom.net"
+              },
+              "timezone": {
+                "id": "Asia/Hong_Kong",
+                "abbr": "HKT",
+                "is_dst": false,
+                "offset": 28800,
+                "utc": "+08:00"
+              },
+              "readme": "https://ipwhois.io/docs"
+            },
+            "ip-api.com": {
+              "status": "success",
+              "country": "Hong Kong",
+              "countryCode": "HK",
+              "regionName": "Central and Western District",
+              "city": "Hong Kong",
+              "timezone": "Asia/Hong_Kong",
+              "isp": "Netvigator",
+              "org": "HKT",
+              "as": "AS4760 HKT Limited",
+              "asname": "EXAMPLE-AP",
+              "mobile": false,
+              "proxy": false,
+              "hosting": false
+            }
+          }
+        }
+      },
+      "durationMs": 0
+    },
+    {
+      "id": "reputation",
+      "title": "信誉与黑名单",
+      "subtitle": "反滥用数据库与代理标记",
+      "status": "ok",
+      "score": 20,
+      "maxScore": 20,
+      "summary": "未命中反滥用黑名单，也无代理标记",
+      "findings": [
+        {
+          "label": "DroneBL",
+          "value": "未列入",
+          "status": "ok"
+        },
+        {
+          "label": "SpamCop",
+          "value": "未列入",
+          "status": "ok"
+        },
+        {
+          "label": "S5H",
+          "value": "未列入",
+          "status": "ok"
+        },
+        {
+          "label": "UCEPROTECT L1",
+          "value": "未列入",
+          "status": "ok"
+        },
+        {
+          "label": "代理 / VPN 标记",
+          "value": "未标记",
+          "status": "ok"
+        }
+      ],
+      "raw": {
+        "blacklists": [
+          {
+            "name": "DroneBL",
+            "state": "clean"
+          },
+          {
+            "name": "SpamCop",
+            "state": "clean"
+          },
+          {
+            "name": "S5H",
+            "state": "clean"
+          },
+          {
+            "name": "UCEPROTECT L1",
+            "state": "clean"
+          }
+        ],
+        "intel": {
+          "proxy": false,
+          "hosting": false
+        }
+      },
+      "durationMs": 542
+    },
+    {
+      "id": "dns",
+      "title": "DNS 泄露",
+      "subtitle": "解析器出口与真实位置比对",
+      "status": "risk",
+      "score": 0,
+      "maxScore": 20,
+      "summary": "解析器出口与代理出口不在同一网络，DNS 存在泄露",
+      "findings": [
+        {
+          "label": "系统 DNS 服务器",
+          "value": "192.168.1.1",
+          "status": "ok"
+        },
+        {
+          "label": "解析器 198.51.100.23",
+          "value": "China · CHINANET (示例网络)（与出口不同国家）",
+          "status": "risk",
+          "hint": "解析请求没有走代理线路，真实位置已暴露"
+        },
+        {
+          "label": "解析器 198.51.100.24",
+          "value": "China · CHINANET (示例网络)（与出口不同国家）",
+          "status": "risk",
+          "hint": "解析请求没有走代理线路，真实位置已暴露"
+        },
+        {
+          "label": "NXDOMAIN 劫持",
+          "value": "未发现",
+          "status": "ok"
+        }
+      ],
+      "raw": {
+        "servers": [
+          "192.168.1.1"
+        ],
+        "observations": [
+          {
+            "ip": "198.51.100.23",
+            "via": "Google o-o.myaddr",
+            "isPublicDns": false,
+            "country": "China",
+            "countryCode": "CN",
+            "org": "CHINANET (示例网络)",
+            "asn": "4134"
+          },
+          {
+            "ip": "198.51.100.24",
+            "via": "Akamai whoami",
+            "isPublicDns": false,
+            "country": "China",
+            "countryCode": "CN",
+            "org": "CHINANET (示例网络)",
+            "asn": "4134"
+          }
+        ],
+        "hijack": {
+          "hijacked": false
+        },
+        "attempts": [
+          {
+            "via": "Google o-o.myaddr",
+            "ip": "198.51.100.23"
+          },
+          {
+            "via": "Akamai whoami",
+            "ip": "198.51.100.24"
+          },
+          {
+            "via": "Akamai ds.akahelp",
+            "error": "应答格式未知"
+          }
+        ]
+      },
+      "durationMs": 310
+    },
+    {
+      "id": "consistency",
+      "title": "环境一致性",
+      "subtitle": "时区、语言与出口是否自洽",
+      "status": "warn",
+      "score": 8,
+      "maxScore": 10,
+      "summary": "本机环境与出口所在地存在不一致，可能被风控关联",
+      "findings": [
+        {
+          "label": "时区一致",
+          "value": "本机 Etc/GMT-8，IP 归属 Asia/Hong_Kong",
+          "status": "ok"
+        },
+        {
+          "label": "语言地区不一致",
+          "value": "zh-CN ↔ HK",
+          "status": "warn",
+          "hint": "系统语言地区与出口国家不同，属于弱信号，单独出现不必紧张"
+        },
+        {
+          "label": "系统代理",
+          "value": "http://127.0.0.1:7890（env）",
+          "status": "ok"
+        },
+        {
+          "label": "活动网卡",
+          "value": "Radmin VPN: fe80::1, fe80::1, 10.8.0.6 | WLAN: 192.168.1.15",
+          "status": "ok"
+        }
+      ],
+      "raw": {
+        "system": {
+          "platform": "win32",
+          "release": "10.0.26200",
+          "arch": "x64",
+          "locale": "zh-CN",
+          "timezone": "Etc/GMT-8",
+          "dnsServers": [
+            "fec0:0:0:ffff::1",
+            "fec0:0:0:ffff::2",
+            "fec0:0:0:ffff::3",
+            "192.168.1.1"
+          ],
+          "proxy": {
+            "enabled": true,
+            "server": "http://127.0.0.1:7890",
+            "source": "env"
+          },
+          "interfaces": [
+            {
+              "name": "Radmin VPN",
+              "addresses": [
+                "fe80::1",
+                "fe80::1",
+                "10.8.0.6"
+              ]
+            },
+            {
+              "name": "WLAN",
+              "addresses": [
+                "192.168.1.15"
+              ]
+            }
+          ]
+        }
+      },
+      "durationMs": 1
+    },
+    {
+      "id": "webrtc",
+      "title": "WebRTC 泄露",
+      "subtitle": "浏览器 UDP 是否绕过代理",
+      "status": "skip",
+      "score": 15,
+      "maxScore": 15,
+      "summary": "当前环境不支持检测 WebRTC",
+      "findings": [
+        {
+          "label": "WebRTC",
+          "value": "不支持",
+          "status": "skip"
+        }
+      ],
+      "durationMs": 0
+    }
+  ],
+  "score": 74,
+  "grade": {
+    "label": "良好",
+    "tone": "warn",
+    "description": "存在个别可疑信号，多数场景可以正常使用。"
+  },
+  "partial": true,
+  "skipped": [
+    "WebRTC 泄露"
+  ],
+  "errors": []
+}

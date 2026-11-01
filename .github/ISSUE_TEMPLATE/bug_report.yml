@@ -1,0 +1,69 @@
+name: Bug 反馈
+description: 报告一个可复现的问题
+title: '[Bug] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请尽量提供可复现的信息。如果是「窗口打不开 / 闪退」，请**务必**附上启动日志：
+        `%TEMP%\netpurity\boot.log`
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本
+      description: 设置面板里看到的 NetPurity 版本号
+      placeholder: 0.1.0
+    validations:
+      required: true
+
+  - type: input
+    id: system
+    attributes:
+      label: 系统
+      description: Windows 版本 + 位数（例如 Windows 11 23H2 x64）
+      placeholder: Windows 11 23H2 x64
+    validations:
+      required: true
+
+  - type: dropdown
+    id: network
+    attributes:
+      label: 网络环境
+      description: 检测时有没有开代理
+      options:
+        - 没开代理，直连
+        - 开了代理（Clash / v2rayN / Sing-box 等）
+        - 公司或校园网
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: 现象
+      description: 发生了什么？你期望发生什么？
+      placeholder: |
+        点「测试全部」后，Netflix 显示「不可达」，但我手动打开 netflix.com 是正常的。
+        期望：显示「可访问」。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开 NetPurity
+        2. 切到「解锁测试」
+        3. 点「测试全部」
+        4. 观察 Netflix 卡片
+
+  - type: textarea
+    id: log
+    attributes:
+      label: 日志 / 截图
+      description: 启动日志、报错文字、界面截图都可以直接粘贴
+      render: text

@@ -1,3 +1,12 @@
-onlyBuiltDependencies:
-  - electron
-  - esbuild
+# pnpm 11 起，依赖的安装脚本必须显式放行，否则 install 会以非 0 退出码结束
+# （strictDepBuilds 默认为 true）。旧写法 onlyBuiltDependencies 在 v11 已移除。
+allowBuilds:
+  # electron 的 postinstall 负责下载对应平台的二进制
+  electron: true
+  # esbuild 需要平台二进制
+  esbuild: true
+  # electron-builder 的间接依赖，脚本无副作用但会被判定为未审核
+  electron-winstaller: true
+
+# 未列出的依赖若将来新增安装脚本，只警告不阻断构建
+strictDepBuilds: false

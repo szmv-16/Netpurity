@@ -15,6 +15,11 @@ jobs:
     runs-on: windows-latest
     permissions:
       contents: write
+    env:
+      # 仓库里的 .npmrc 指向国内镜像，在 GitHub Runner 上会很慢，这里改回官方源
+      npm_config_registry: https://registry.npmjs.org
+      ELECTRON_MIRROR: https://github.com/electron/electron/releases/download/
+      CSC_IDENTITY_AUTO_DISCOVERY: false
 
     steps:
       - uses: actions/checkout@v4
